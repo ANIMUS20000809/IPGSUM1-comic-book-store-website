@@ -1,0 +1,169 @@
+﻿@font-face {
+    font-family: animeace2_reg;
+    src: url('animeace2bb_ot/animeace2_reg.otf') format('opentype');
+}
+
+body, html {
+    font-family: animeace2_reg;
+    background-color: black;
+    position: relative;
+    color: #ED1D24;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@font-face {
+    font-family: animeace2_reg;
+    src: url("..\animeace2bb_ot\animeace2_reg.otf");
+}
+
+header {
+    background-color: #ED1D24;
+    color: white;
+    margin: 0 500px;
+    padding: 0;
+    border: 0px #ED1D24;
+    border-radius: 50%;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 0;
+    position: relative;
+}
+
+#Gallery > article {
+    display: block;
+    border-top: 3px solid white;
+    border-radius: 2px;
+    overflow: auto;
+    margin-right: 50%;
+    margin-left: 40px;
+    padding-left: 0;
+    padding-bottom: 50px;
+}
+
+img {
+    float: left;
+    height: 300px;
+    width: auto;
+    margin: 10px 40px 20px 50px;
+    border: 3px solid white;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+footer {
+    background-color: #ED1D24;
+    color: white;
+    margin-top: 25%;
+}
+
+p {
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+article > p {
+    margin-bottom: 0px;
+}
+
+h1 {
+    margin-left: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-left: 50px;
+}
+
+nav {
+    margin-bottom: 30px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+}
+
+address {
+    margin-left: 20px;
+}
+
+a:hover {
+    color: blue;
+}
+
+#map {
+    position: relative;
+    height: 75%;
+    width: 100%;
+}
+
+iframe {
+    border: 0;
+    float: left;
+    margin-right: 50px;
+}
+
+#list {
+    position: fixed;
+    right: 10%;
+    top: 30%;
+    left: 65%;
+    color: white;
+}
+
+table {
+    margin: 0 20px 20px 0;
+    float: left;
+}
+
+#share {
+    float: right;
+}
+
+#list li {
+    list-style-type: decimal
+}
+
+#home-footer {
+    bottom: 0px;
+    position: relative;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-top: 10%;
+}
+
+#Home-img-grd {
+    max-width: 1207px;
+    margin: auto;
+    background: #f2f2f2;
+    overflow: auto;
+}
+
+#Home-img-grd > article {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 390px;
+}
+
+#Home-img-grd > article > img {
+    float: none;
+    margin: auto;
+    border: none;
+    width: 100%;
+    height: 500px;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
