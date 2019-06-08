@@ -1,20 +1,24 @@
-﻿ //function for initializing the google map object
-function initMap() { 
-    //checking if the browser supports the geolocation api
-    if (navigator.geolocation) {
+﻿// initializing variable for worker
+var w;
 
-        alert("Your browser does support location services");
+// function for starting worker
+function startWorker() {
 
-        navigator.geolocation.getCurrentPosition(function (position) {
-            var location = { lat: position.coords.latitude, long: position.coords.longitude };
-            alert("Lat: " + location.lat + " Long: " + location.long);
+    //checking if browser supports web workers and if the worker already exists
+    if (typeof (Worker) !== "undefined") {
+        if (typeof (w) == "undefined") {
+            console.log("Web worker support!")
+            w = new Worker("Contact page web worker.js");
+        }
 
-        });
+    } else {
+        console.log("Sorry! No Web Worker support.");
     }
-    else {
-        alert("Your browser does not support location services");
-    }
-
 }
 
-initMap();
+function stopWorker() {
+    w.terminate();
+    w = undefined;
+}
+
+startWorker();
