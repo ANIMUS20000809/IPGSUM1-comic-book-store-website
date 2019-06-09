@@ -5,7 +5,7 @@ function getLocation() {
     if (navigator.geolocation) {
 
         //alerting browser support
-        alert("Your browser supports location services");
+        console.log("Your browser supports location services");
 
         // getting the location information
         navigator.geolocation.getCurrentPosition(function (position) {
@@ -17,7 +17,9 @@ function getLocation() {
     }
     else {
         // alerting no browser support
-        alert("Your browser does not support location services");
+        console.log("Your browser does not support location services");
     }
 
 }
+
+getLocation();
